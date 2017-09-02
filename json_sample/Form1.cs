@@ -1,12 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace json_sample
@@ -32,14 +26,14 @@ namespace json_sample
             root_node.year = "1997";
 
             //Hogeノード組み立て
-            var hoge_node = new json_sample.Hoge();
+            var hoge_node = new Hoge();
             hoge_node.stringField = "piyo";
             hoge_node.numField = 123;
             hoge_node.floatField = 20.315;
             hoge_node.boolField = false;
 
             //Hugaノード組み立て
-            var huga_node = new json_sample.JsonNodeHoge.Huga();
+            var huga_node = new JsonNodeHoge.Huga();
             huga_node.piyo = new List<string> { "orange",
                  "apple"};
 
